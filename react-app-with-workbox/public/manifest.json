@@ -1,0 +1,6 @@
+{
+  "short_name": "React Workbox App ",
+  "name": "React Workbox App Sample",
+  "start_url": ".",
+  "display": "standalone"
+}

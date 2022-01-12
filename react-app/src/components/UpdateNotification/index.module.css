@@ -1,0 +1,26 @@
+.main {
+  position: absolute;
+  top: 0;
+  height: 30px;
+  width: 100%;
+  opacity: 0.8;
+  background-color: #636e72;
+  color: #fff;
+  padding: 10px 0;
+
+  display: flex;
+  justify-content: center;
+}
+
+.update {
+  color: #2d98da;
+  text-decoration: none;
+}
+
+.update:hover {
+  color: #45aaf2;
+}
+
+.update:active {
+  color: #4b7bec;
+}
