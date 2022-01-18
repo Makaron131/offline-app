@@ -21,13 +21,13 @@ self.addEventListener("fetch", (event) => {
           console.log("cache hit!");
           return response;
         } else {
-          console.log("cache not hit..");
+          console.log("cache not hit: ", event.request.url);
           return fetch(event.request).then(function (response) {
-            // let responseClone = response.clone();
+            let responseClone = response.clone();
 
-            // caches.open(currentCacheStorageVersion).then(function (cache) {
-            //   cache.put(event.request, responseClone);
-            // });
+            caches.open(currentCacheStorageVersion).then(function (cache) {
+              cache.put(event.request, responseClone);
+            });
 
             return response;
           });
