@@ -16,3 +16,13 @@ if ("serviceWorker" in navigator) {
 }
 
 console.log(1);
+
+const button = document.getElementById("calculate");
+
+button.addEventListener("click", function () {
+  const param1 = document.getElementById("param1");
+  const param2 = document.getElementById("param2");
+
+  const result = document.getElementById("result");
+  result.textContent = param1.value + param2.value;
+});
